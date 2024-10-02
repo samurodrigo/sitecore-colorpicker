@@ -1,8 +1,8 @@
 ﻿using System.Web.UI;
 
-namespace Sitecore.CustomFields.ColorBuddy.Project
+namespace Sitecore.CustomFields.ColorSelector.Project
 {
-    public class ColorBuddy: Sitecore.Web.UI.HtmlControls.Edit
+    public class ColorSelector: Sitecore.Web.UI.HtmlControls.Edit
     {
         protected override void DoRender(HtmlTextWriter output)
         {
