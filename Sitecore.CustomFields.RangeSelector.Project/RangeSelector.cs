@@ -21,8 +21,9 @@ namespace Sitecore.CustomFields.RangeSelector.Project
 
         protected override void DoRender(HtmlTextWriter output)
         {
+            var style = !string.IsNullOrWhiteSpace(_config.Width) ? $"style='width:{ _config.Width }px'" : string.Empty;
             output.Write("<div class='range-container'>");
-            output.Write($"<input class='range-input' type='range' id='{this.ID}' data-id='{this.ID}' value='{this.Value}' name='{this.Name}' min='{_config.Min}' max='{_config.Max}' step='{_config.Step}' list='{this.ID}__markers' /> {GetDataList()}");
+            output.Write($"<input class='range-input' type='range' id='{this.ID}' data-id='{this.ID}' value='{this.Value}' name='{this.Name}' min='{_config.Min}' max='{_config.Max}' step='{_config.Step}' list='{this.ID}__markers' {style} /> {GetDataList()}");
             output.Write($"<span class='range-actual-value' data-id='{this.ID}'>{this.Value}</span>");
             if (!string.IsNullOrWhiteSpace(_config.ExampleBoxType)) { 
             
