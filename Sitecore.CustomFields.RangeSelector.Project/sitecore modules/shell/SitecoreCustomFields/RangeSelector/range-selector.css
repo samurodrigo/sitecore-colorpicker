@@ -1,0 +1,27 @@
+﻿.range-container{
+    display:flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+}
+
+.range-example .range-example-color{
+    width: 60px;
+    height: 30px;
+    background-color: black;
+}
+
+.range-example .range-example-image{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.range-example .range-example-text{
+    font-size: 1.4rem;
+    color: black;
+}
+
+.range-error-message{
+    color:red;
+}
+
